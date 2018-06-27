@@ -1,0 +1,19 @@
+<h1>Cadastrar nova Tradução</h1>
+
+Exemplo pra nao usar
+<form action="/cards/" method="post">
+  <label for="port">Portugues:</label>
+  <input type="text" name="portugues" id="port">
+  <label>Ingles:</label>
+  <input type="text" name="ingles">
+  <input type="submit">
+</form>
+
+<h2>Form com form_for</h2>
+<%= form_for(Card.new) do |f| %>
+  <%= f.label :portugues %>
+  <%= f.text_field :portugues %>
+  <%= f.label :ingles %>
+  <%= f.text_field :ingles %>
+  <%= f.submit %>
+<% end %>

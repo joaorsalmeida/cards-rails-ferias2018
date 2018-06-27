@@ -1,0 +1,11 @@
+<h1>Tela Inicial</h1>
+
+<ul>
+  <% @cards.each do |c| %>
+    <li><a href="/ver_traducao/<%= c.id() %>">  <%= c.portugues() %>  </a> </li>
+  <% end %>
+</ul>
+
+<a>Cadastrar nova tradução</a>
+
+<a href="https://www.w3schools.com/html/">Visit our HTML tutorial</a>
